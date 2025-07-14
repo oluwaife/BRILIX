@@ -172,7 +172,11 @@ body {
 /* about */
 .card-img-top {
   height: 260px;
-  object-fit: cover;
+  object-fit: contain;
+}
+.team-img {
+  height: 260px;
+  object-fit: contain;
 }
 small {
   color: var(--TealGreen);
@@ -252,6 +256,10 @@ small {
 
 .card-img-top {
   object-fit: fill;
+  height: 20rem;
+}
+.team-img {
+  object-fit: contain;
   height: 20rem;
 }
 .modal-title {
