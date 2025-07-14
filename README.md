@@ -97,13 +97,4 @@ Solution: Plan to add unique IDs to detailed posts and update links for smooth s
 
 
 
-Defense Notes
 
-Purpose: The website promotes Brilix Dental Clinic, builds trust with testimonials and blogs, and encourages bookings via CTAs.
-Why Bootstrap?: Provides a responsive, professional layout with minimal setup, customized with a branded color scheme.
-Key Features: Highlight the pricing filter, blog carousel, and form validation as interactive, user-focused elements.
-Branding: The tooth emoji 🦷, --TealGreen, and --LightCoral create a cohesive, friendly aesthetic.
-Responsiveness: Bootstrap’s grid and media queries in style.css ensure compatibility across devices.
-
-License
-© 2025 Brilix Dental Clinic. Designed for educational purposes.
