@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Shrikhand", serif;
+  font-family: "Manrope", sans-serif;
 }
 :root {
   --White: #ffffff;
@@ -17,7 +19,10 @@
   --Gray: #e0e0e0;
 }
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .navbar {
   background-color: var(--SoftWhite);
@@ -82,7 +87,7 @@ body {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-image: linear-gradient(to right, var(--Sky-Blue), var(--Navy));
+    /* background-image: linear-gradient(to right, var(--Sky-Blue), var(--Navy)); */
     visibility: hidden;
     transition: 0.3s ease-in-out;
   }
@@ -133,6 +138,7 @@ body {
   transition: word-spacing 0.5s ease-in-out, transform 0.5s 0.5s ease-in-out;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: "Shrikhand", serif;
   /* text-align: center; */
 }
 .hero-section h1:hover {
@@ -142,7 +148,7 @@ body {
 .hero-section h5 {
   margin-bottom: 15px;
   transition: font-size 0.5s ease-in-out;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1.3rem;
   margin-bottom: 30px;
   line-height: 2rem;
@@ -157,6 +163,7 @@ body {
   text-align: center;
   font-weight: bold;
   color: var(--LightCoral);
+  font-family: "Shrikhand", serif;
 }
 .card-body {
   background-color: var(--SkyBlue);
@@ -172,6 +179,7 @@ small {
 }
 .fw-bold {
   color: var(--LightCoral);
+  font-family: "Shrikhand", serif;
 }
 /* Pricing */
 .pricing-card {
@@ -238,7 +246,8 @@ small {
 .card-title {
   font-size: 1rem;
   color: var(--LightCoral);
-  font-weight: 600;
+  font-weight: 100;
+  font-family: "Shrikhand", serif;
 }
 
 .card-img-top {
