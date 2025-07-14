@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Shrikhand", serif;
+}
+:root {
+  --White: #ffffff;
+  --MintGreen: #d1f0e1;
+  --TealGreen: #2bbbad;
+  --SkyBlue: #b3e5fc;
+  --DeepNavy: #003f5c;
+  --SoftWhite: #f9f9f9;
+  --WarmGray: #8a8a8a;
+  --LightCoral: #ff6b6b;
+  --Gray: #e0e0e0;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+.navbar {
+  background-color: var(--SoftWhite);
+  height: 5rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  /* top: 0; */
+  position: sticky;
+}
+.tooth {
+  font-size: 150%;
+}
+.navbar-brand {
+  font-size: 150%;
+  color: var(--DeepNavy);
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.login-button {
+  color: var(--White);
+  background: var(--DeepNavy);
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.5s background-color ease-in-out;
+  border: none;
+}
+.login-button:hover {
+  background: var(--TealGreen);
+}
+.login-button:active {
+  background: var(--SkyBlue);
+}
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.nav-link {
+  color: var(--DeepNavy);
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s color ease-in-out, 0.5s letter-spacing ease-in-out;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--TealGreen);
+  letter-spacing: 1px;
+}
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--Sky-Blue), var(--Navy));
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+  .hero-section {
+    background: url(../img/dent-L.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: -9rem;
+  }
+}
+@media (max-width: 990px) {
+  .hero-section {
+    background: url(../img/dent-S.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    margin-top: -9rem;
+    /* padding: 80px 0; */
+    text-align: center;
+  }
+}
+.hero-section::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero-section .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+  color: var(--White);
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  word-spacing: 3px;
+  transition: word-spacing 0.5s ease-in-out, transform 0.5s 0.5s ease-in-out;
+  font-weight: bold;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+.hero-section h1:hover {
+  word-spacing: 12px;
+  transform: translateX(-1x);
+}
+.hero-section h5 {
+  margin-bottom: 15px;
+  transition: font-size 0.5s ease-in-out;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  line-height: 2rem;
+}
+.hero-section h5:hover {
+  font-size: 1.4rem;
+}
+/* keep */
+.section-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--LightCoral);
+}
+.card-body {
+  background-color: var(--SkyBlue);
+}
+/* end keep */
+/* about */
+.card-img-top {
+  height: 260px;
+  object-fit: cover;
+}
+small {
+  color: var(--TealGreen);
+}
+.fw-bold {
+  color: var(--LightCoral);
+}
+/* Pricing */
+.pricing-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  border: none;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+.card-header {
+  background: url(../img/back2.jpg) no-repeat center;
+  background-size: cover;
+}
+.price {
+  color: var(--DeepNavy);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.tick-list {
+  display: table;
+  color: var(--WarmGray);
+}
+
+.tick-list li {
+  position: relative;
+  padding-left: 1.8em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.tick-list li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2f4156;
+  font-weight: bold;
+}
+
+/* blog and testimonies*/
+.blog-scroll {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.blog-scroll .card {
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.blog-scroll .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1rem;
+  color: var(--LightCoral);
+  font-weight: 600;
+}
+
+.card-img-top {
+  object-fit: fill;
+  height: 20rem;
+}
+.modal-title {
+  color: var(--LightCoral);
+}
+.modal-header {
+  color: var(--MintGreen);
+}
+.modal-body {
+  background-color: var(--TealGreen);
+  color: var(--Gray);
+}
+.blog-scroll::-webkit-scrollbar {
+  height: 0.7rem;
+}
+
+.blog-scroll::-webkit-scrollbar-track {
+  background: var(--Gray);
+  border-radius: 10px;
+}
+
+.blog-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--DeepNavy);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 10px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: #e9ecef;
+}
+.testimonial {
+  background: var(--TealGreen);
+  border-left: 5px solid var(--DeepNavy);
+  font-style: italic;
+  color: var(--DeepNavy);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.sub-section {
+  color: var(--WarmGray);
+}
+/* contact */
+.contact-section label {
+  font-weight: 500;
+  color: var(--DeepNavy);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--TealGreen);
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.btn-success {
+  background-color: var(--TealGreen);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: var(--TealGreen);
+}
+
+.alert {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* footer */
+footer a:hover {
+  color: var(--TealGreen); /* Mint highlight on hover */
+  text-decoration: underline;
+}
+
+footer h5,
+footer h6 {
+  color: var(--White);
+}
