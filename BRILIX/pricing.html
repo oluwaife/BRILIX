@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brilix</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" class="css" />
+    <link rel="stylesheet" href="css/style.css" class="css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <a
+        href="index.html"
+        class="login-button login-button -sm login-button -secondary mb-3"
+        >&larr; Back to Homepage</a
+      >
+
+      <input
+        type="text"
+        id="pricingSearch"
+        class="form-control w-50 mx-auto my-4 search-bar"
+        placeholder="Search..."
+        onkeyup="filterPricing()"
+      />
+    </div>
+    <!-- Pricing -->
+    <section class="container my-5">
+      <h2 class="section-title text-center mb-3">Our Pricing</h2>
+      <p class="text-center sub-section mb-5">
+        Choose a dental plan that fits your smile and your budget.
+      </p>
+
+      <div class="row justify-content-center g-4">
+        <!-- 1. Basic Checkup -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-0">
+            <img src="img/dent2.jpg" class="card-img-top" alt="Basic Checkup" />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Basic Checkup</h4>
+              <p class="sub-section small mb-0">Routine exam</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦5,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Oral checkup</li>
+                <li>X-ray (if needed)</li>
+                <li>Consultation</li>
+              </ul>
+              <a
+                href="#contact"
+                class="login-button login-button -primary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Teeth Whitening -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-primary border-2"
+          >
+            <img
+              src="img/teeth whitening.jpg"
+              class="card-img-top"
+              alt="Teeth Whitening"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Teeth Whitening</h4>
+              <p class="sub-section small mb-0">Brighten up</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦15,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>1-hour session</li>
+                <li>Stain removal</li>
+                <li>Aftercare kit</li>
+              </ul>
+              <a
+                href="#contact"
+                class="login-button login-button -outline-primary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Braces Consultation -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-0">
+            <img
+              src="img/braces consult.jpg"
+              class="card-img-top"
+              alt="Braces Consultation"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Braces Consult</h4>
+              <p class="sub-section small mb-0">For aligners & more</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦10,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Alignment check</li>
+                <li>Ortho advice</li>
+                <li>Payment plans</li>
+              </ul>
+              <a
+                href="#contact"
+                class="login-button login-button -primary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Kids Dental -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-success border-2"
+          >
+            <img
+              src="img/kids dental care.jpg"
+              class="card-img-top"
+              alt="Kids Dental Care"
+            />
+            <div class="card-header rounded-0 text-center">
+              <h4 class="fw-bold mb-0">Children’s Care</h4>
+              <p class="sub-section small mb-0">Ages 3–12</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦7,500</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Gentle cleaning</li>
+                <li>Kid-friendly tools</li>
+                <li>Growth advice</li>
+              </ul>
+              <a href="#contact" class="login-button px-5 w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Emergency -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-danger border-2">
+            <img
+              src="img/emergency visit.jpg"
+              class="card-img-top"
+              alt="Emergency Visit"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Emergency Visit</h4>
+              <p class="sub-section small mb-0">Same-day care</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦8,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Urgent toothache</li>
+                <li>Swelling & trauma</li>
+                <li>Immediate care</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-danger w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Dental Fillings -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-info border-2">
+            <img
+              src="img/dental fillings.jpg"
+              class="card-img-top"
+              alt="Dental Fillings"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Dental Fillings</h4>
+              <p class="sub-section small mb-0">Cavity treatment</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦6,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Tooth decay removal</li>
+                <li>Composite filling</li>
+                <li>Aftercare guide</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-info w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Root Canal -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-dark border-2">
+            <img
+              src="img/root canal.jpg"
+              class="card-img-top"
+              alt="Root Canal"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Root Canal</h4>
+              <p class="sub-section small mb-0">Save your tooth</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦20,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Pain relief</li>
+                <li>Pulp removal</li>
+                <li>Tooth sealing</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-dark w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Dental Cleaning -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-secondary border-2"
+          >
+            <img
+              src="img/dental cleaning.jpg"
+              class="card-img-top"
+              alt="Dental Cleaning"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Dental Cleaning</h4>
+              <p class="sub-section small mb-0">Deep clean</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦6,500</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Tartar removal</li>
+                <li>Polishing</li>
+                <li>Fluoride rinse</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-secondary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Tooth Extraction -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-warning border-2"
+          >
+            <img
+              src="img/tooth extraction.jpg"
+              class="card-img-top"
+              alt="Tooth Extraction"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Tooth Extraction</h4>
+              <p class="sub-section small mb-0">Gentle & Safe Removal</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦9,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Local anesthesia</li>
+                <li>Single tooth</li>
+                <li>Pain relief included</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-warning w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Dental Implants -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-secondary border-2"
+          >
+            <img
+              src="img/dental implant.jpg"
+              class="card-img-top"
+              alt="Dental Implants"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Dental Implants</h4>
+              <p class="sub-section small mb-0">Permanent solution</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦80,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Titanium post</li>
+                <li>Single crown</li>
+                <li>Natural look</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-secondary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Dental Crown -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-primary border-2"
+          >
+            <img
+              src="img/dental crown.jpg"
+              class="card-img-top"
+              alt="Dental Crown"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Dental Crown</h4>
+              <p class="sub-section small mb-0">Tooth restoration</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦25,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Porcelain finish</li>
+                <li>Lasts years</li>
+                <li>Custom fit</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-primary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Braces (Starter Plan) -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-success border-2"
+          >
+            <img
+              src="img/braces stater.jpg"
+              class="card-img-top"
+              alt="Braces Plan"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Braces Starter</h4>
+              <p class="sub-section small mb-0">Phase 1</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦60,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Initial fitting</li>
+                <li>First 2 visits</li>
+                <li>Basic appliances</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-success w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Night Guards -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-dark border-2">
+            <img
+              src="img/night guard.jpg"
+              class="card-img-top"
+              alt="Night Guard"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Night Guard</h4>
+              <p class="sub-section small mb-0">Anti-grind device</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦12,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Custom mold</li>
+                <li>Comfort fit</li>
+                <li>Prevents grinding</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-dark w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Fluoride Treatment -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card pricing-card h-100 shadow-sm border-info border-2">
+            <img
+              src="img/fluoride treatment.jpg"
+              class="card-img-top"
+              alt="Fluoride Treatment"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Fluoride Treatment</h4>
+              <p class="sub-section small mb-0">Strengthen enamel</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦3,500</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Topical gel</li>
+                <li>For all ages</li>
+                <li>Cavity prevention</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-info w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Whitening Kit (Home Use) -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-secondary border-2"
+          >
+            <img
+              src="img/whitening kit.jpg"
+              class="card-img-top"
+              alt="Whitening Kit"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Home Whitening Kit</h4>
+              <p class="sub-section small mb-0">DIY Brighten</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦10,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Whitening trays</li>
+                <li>Safe gel</li>
+                <li>Instructions included</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-secondary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. Orthodontic Retainer -->
+        <div class="col-md-4 col-lg-3">
+          <div
+            class="card pricing-card h-100 shadow-sm border-primary border-2"
+          >
+            <img
+              src="img/orthodontic retainer.jpg"
+              class="card-img-top"
+              alt="Retainer"
+            />
+            <div class="card-header text-center">
+              <h4 class="fw-bold mb-0">Orthodontic Retainer</h4>
+              <p class="sub-section small mb-0">Post-braces care</p>
+            </div>
+            <div class="card-body text-center">
+              <h2 class="price mb-3">₦18,000</h2>
+              <ul class="list-unstyled text-start tick-list mx-auto">
+                <li>Clear or wire</li>
+                <li>Custom fit</li>
+                <li>Maintenance guide</li>
+              </ul>
+              <a
+                href="index.html#contact"
+                class="login-button login-button -outline-primary w-100 mt-4"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
